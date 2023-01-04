@@ -17,7 +17,11 @@ app.use('/public', express.static('public'));
 
 // Mount routes
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
+  res.render('home');
+});
+
+app.get('/pokedex', (req, res) => {
   res.render('pokemon', {
     pokedex: pokedex
   });
