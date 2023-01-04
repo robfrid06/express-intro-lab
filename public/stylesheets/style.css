@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box
+}
+
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #f6f6f6;
+  /* Use a system font, if none are available use any found sans-sarif font */
+  font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
+    'Helvetica Neue', sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+div {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 50%;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  border: 1px solid #f6f6f6;
+  margin-bottom: 4rem;
+}
+
+td {
+  border: 1px solid #f6f6f6;
+  text-align: center;
+}
